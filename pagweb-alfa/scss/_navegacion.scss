@@ -1,0 +1,16 @@
+/* NESTING O ANIDAMIENTO */
+nav{
+    display: flex;
+    ul{
+        list-style-type: none;
+        li{font-size: 'estilo-encabezado';
+            color: #F8AAA8;
+            &:hover{
+                color: $color-primario;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}

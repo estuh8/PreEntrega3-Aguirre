@@ -1,0 +1,573 @@
+/* VARIABLES */
+/* NESTING O ANIDAMIENTO */
+nav {
+  display: flex;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  font-size: "estilo-encabezado";
+  color: #F8AAA8;
+}
+nav ul li:hover {
+  color: white;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+/* TIPOGRAFIAS */
+/* FUENTES LOCALES */
+@font-face {
+  font-family: "estilo-encabezado";
+  src: url("../assets/fonts/Belgrano-Regular.ttf");
+}
+@font-face {
+  font-family: "intro-1";
+  src: url("../assets/fonts/Hurricane-Regular.ttf");
+}
+@font-face {
+  font-family: "intro-2";
+  src: url("../assets/fonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: "intro-alfa";
+  src: url("/assets/fonts/Homenaje-Regular.ttf");
+}
+/*TIPOGRAFIAS*/
+/* INDEX */
+.estilo-encabezado {
+  order: 2;
+  font-family: "estilo-encabezado", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border-color: none;
+}
+
+.intro-1 {
+  font-family: "intro-1", sans-serif;
+  font-size: 35px;
+  display: flex;
+  margin: 50px;
+  align-items: center;
+  color: white;
+}
+
+.intro-2 {
+  font-family: "intro-2" sans-serif;
+  font-size: 20px;
+  margin: 2%;
+  color: white;
+}
+
+.intro-alfa {
+  display: flex;
+  align-items: center;
+  font-family: "intro-alfa" sans-serif;
+  font-size: 20px;
+  margin: 2%;
+  color: white;
+}
+
+/* TIPOGRAFIAS */
+/* PRODUCTOS */
+.productos-txt {
+  font-family: "intro-1", sans-serif;
+  font-size: 35px;
+  display: flex;
+  margin: 50px;
+  align-items: center;
+  color: white;
+}
+
+.productos-font {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "estilo-encabezado";
+  font-size: 30px;
+  color: white;
+}
+
+.productos-font2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "intro-alfa";
+  font-size: 20px;
+  color: white;
+}
+
+/* SERVICIOS */
+.servicios-font {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "estilo-encabezado";
+  font-size: 30px;
+  color: white;
+}
+
+.servicios-font2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "intro-alfa";
+  font-size: 20px;
+  color: white;
+}
+
+/* TURNOS */
+.turnos-font {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "estilo-encabezado";
+  font-size: 30px;
+  color: white;
+}
+
+.turnos-font2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "intro-alfa";
+  font-size: 20px;
+  color: white;
+}
+
+.link-turno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* VIDEO */
+.video-servicio {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 240;
+}
+
+.video-bronceado {
+  display: flex;
+  justify-content: right;
+  width: 700px;
+  height: 500px;
+}
+
+/* CONTACTO */
+.logo-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  border-radius: 100%;
+}
+
+/* INICIO */
+body {
+  /* background-image: url('../assets/img/sofafondo.jpg'); */
+  background-color: thistle;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* LOGO INDEX*/
+.icon-alfa {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  margin: 0;
+  top: 10px;
+  filter: drop-shadow(0px 7px 21px #f8AAA8);
+}
+
+/* IMAGENES DEL INDEX */
+.imagenes-index {
+  width: 350px;
+  height: 400px;
+  padding: 5px 5px;
+  background-color: #F8AAA8;
+  border: none;
+  border-radius: 50px;
+  margin: 0 5px;
+  margin-bottom: 50px;
+}
+
+.index-img {
+  display: flex;
+  justify-content: center;
+}
+
+/* IMAGENES PRODUCTOS */
+.index-img {
+  display: flex;
+  justify-content: center;
+}
+
+/* GALERIA */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 90%;
+  margin: 5%;
+  grid-gap: 30px;
+}
+
+#gallery img {
+  width: 100%;
+  transition: all 300ms;
+  position: relative;
+  padding: 5px 5px;
+  background-color: #F8AAA8;
+  border-radius: 50px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+#gallery img:hover {
+  transform: scale(1.15);
+}
+
+/* NAVBAR */
+.nav_bar {
+  list-style: none;
+}
+
+.nav_bar li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_bar li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_bar li a:hover {
+  color: #F8AAA8;
+}
+
+/* ICONOS REDES SOCIALES */
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons i {
+  font-size: 25px;
+  color: #FFFFFF;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  color: #F8AAA8;
+}
+
+/* BOTON CONTACTO */
+li, a, button {
+  font-family: "estilo-encabezado";
+  font-weight: 800;
+  font-size: 14px;
+  color: #fd9a97;
+  text-decoration: none;
+}
+
+button {
+  margin-left: 15px;
+  padding: 2px 5px;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: black;
+}
+
+/* textos con flexbox */
+/* INDEX */
+.intro-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-alfa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-derechos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer-txt {
+  font-family: "estilo-encabezado";
+  display: flex;
+  margin: auto;
+}
+
+/* LOGO */
+.icon-alfa {
+  width: 100px;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: 300px;
+}
+
+.mov_logo {
+  animation: movimiento 2.5s linear infinite;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  animation: movimiento 2.5s linear infinite;
+}
+
+/* DERECHOS RESERVADOS */
+#footer {
+  display: flex;
+  height: auto;
+  width: 100%;
+  background-color: #F8AAA8;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.logo-mp {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.footer-txt {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: #FFFFFF;
+}
+
+/* COLOR DEGRADADO FONDO */
+/* body:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#fff, #F8AAA8);
+    opacity: 0.5; */
+/* ORDEN DE ELEMENTOS */
+/*     z-index: -1; */
+/* MOVIMIENTO LOGO */
+@keyframes movimiento {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+/* SCOLL */
+.scroll-personalice::-webkit-scrollbar {
+  width: 7px;
+}
+
+.scroll-personalice::-webkit-scrollbar-thumb {
+  background: #F8AAA8;
+  border-radius: 15px;
+}
+
+/* CONTACTO */
+/* FORMULARIO CONTACTO */
+.container-form {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin-top: 90px;
+}
+
+.container-form h2 {
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+
+.container-form p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.container-form a {
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  color: white;
+  font-weight: 700;
+}
+
+.container-form a i {
+  color: #F8AAA8;
+  margin-right: 10px;
+}
+
+.container-form form .campo, textarea {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 15px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+
+.container-form form textarea {
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+
+.container-form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background-color: #F8AAA8;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover {
+  background-color: #F8AAA8;
+}
+
+/* MEDIAQUERIES */
+/* CELULAR */
+@media screen and (max-width: 480px) {
+  .icon-alfa {
+    width: 100px;
+    cursor: pointer;
+    margin-right: 100px;
+    margin-left: 400px;
+  }
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .nav_bar {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .icons {
+    padding: 40px;
+    display: flex;
+  }
+  .icons i {
+    font-size: 25px;
+    color: #FFFFFF;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .imagenes-index {
+    width: 350px;
+    height: 400px;
+    padding: 5px 5px;
+    background-color: #F8AAA8;
+    border: none;
+    border-radius: 50px;
+    margin: 0 5px;
+    margin-bottom: 0px;
+  }
+}
+.index-img {
+  display: flex;
+  justify-content: center;
+}
+
+/* #main-principal{ */
+/* of condicional */
+/* @if ($color-alfa ==red){
+    background-color: #F8AAA8;
+    color: #0000;
+    width: 100%;
+}
+@else{
+    background-color: pink;
+} /* */
+/* IF CONDICIONAL */
+@media screen and (min-width: 961px) and (max-width: 1328px) {
+  .icon-alfa {
+    width: 100px;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 300px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
